@@ -5,7 +5,7 @@ faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontal
 
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
-    raise IOError("Cannot Open Webcam")
+    raise IOError("Webcam is not detected)
     
 while True:
     ret,frame = cap.read()
